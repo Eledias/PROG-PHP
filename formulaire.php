@@ -70,5 +70,13 @@
 		.$_POST['rue'].", ".$_POST['cp'].", ".$_POST['ville'].", ".$_POST['mail'].", ".$_POST['num-tel']);
 	fclose($df);
 
+	if (empty($_POST['classe'])) { // Champs de la Classe
+		echo "Erreur de classe" . "<br>";
+		}
+		else {
+		echo "Classe conforme" . "<br>";}
+		
+
+
 
 ?>
